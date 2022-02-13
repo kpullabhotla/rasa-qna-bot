@@ -1,0 +1,67 @@
+version: "3.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - class
+  - materials
+  - instructor
+
+entities:
+  - class_start
+  - class_end
+  - class_time
+  - class_location
+  - class_location_online
+  - class_reference
+  - instructor_details 
+
+slots:
+  classes:
+    type: list
+    mappings:
+    - type: class_start
+      influence_conversation: false
+      entity: entity_name
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_class:
+  - text: "The first class will be on Wednesday, January 19, 2022."
+  - text: "The last day of class will be on Wednesday, May 4, 2022."
+
+  utter_materials:
+  - text: "You will need the following for this course:
+        * The textbook: Survey of Accounting, 9th edition, Carl Warren, South-Western Cengage Learning (ISBN 978-0357132593). 
+        * A simple, standard calculator."
+  
+  utter_instructor:
+  - text: "Sandra Devona, MAS, CPA"
+  - text: "Barsema Hall, Room 345V"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

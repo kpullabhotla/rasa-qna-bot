@@ -1,0 +1,28 @@
+version: "3.0"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: respond to class
+  steps:
+  - intent: class
+  - action: utter_class
+
+- rule: respond to instructor
+  steps:
+  - intent: instructor
+  - action: utter_instructor
+
+- rule: respond to materials
+  steps:
+  - intent: materials
+  - action: utter_materials

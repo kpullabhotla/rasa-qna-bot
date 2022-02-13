@@ -1,0 +1,143 @@
+version: "3.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: class
+  examples: |
+    - When is the [first](class_start) day of class
+    - What day does class [start](class_start)
+    - When is the [last](class_end) day of class
+    - What day does class [end](class_end)
+    - What time do we [meet](class_time) for class
+    - When is class(class_time)
+    - What are my class [timings](class_time)
+    - When is the class [scheduled](class_time)
+    - What [room](classroom_location) does the course [meet in](class_location)
+    - What's our [classroom](class_location)
+    - [Where](class_location) do we have class]
+    - Will we [meet online](class_location_online)
+    - Is this [class online](class_location_online)
+    - Will class be [held online](class_location_online)
+
+
+- intent: materials
+  examples: |
+    - Is there a required [textbook](class_reference)
+    - What [textbooks](class_reference) are required
+    - Do I need any [books](class_reference) for this course
+    - Is there any preferred [textbook](class_reference) for this course
+    - What [textbook](class_reference) do I need to refer
+    - How do I access the [textbook](class_reference) for this course
+    - How do I purchase the [textbook](class_reference) for this course
+    - What [materials](class_reference) are required for this course
+    - What do I need to [purchase](class_reference) for this course
+    - Where can I find my course [material](class_reference)
+    - Are [calculators](class_reference) allowed in my exam
+
+- intent: instructor
+  examples: |
+    - Who is the [instructor](instructor_details)
+    - [Who teaches](instructor_details) this class
+    - Who is the [teacher](instructor_details)
+    - Who [teaches ACCY 288](instructor_details)
+    - Where is the [instructor's office located](instructor_location)
+    - Where is the [Professor Devona's](instructor_location) office
+    - Where can I [find the professor](instructor_location)
+    - What is the [instructor's email](instructor_details) address
+    - What's Professor [Devona's](instructor_details) email address?=
+    - How do I [contact Professor Devona](instructor_details)
+    - How do I [contact the professor](instructor_details)
+    - Can I [email the professor](instructor_details)
+    - Can I [email Professor Devona](instructor_details)
+    - What is the instructor's [office phone number](instructor_details)
+    - What's [Professor Devona's phone](instructor_details)
+    - Can I [call Professor Devona](instructor_details)
+    - Can I [call the professor](instructor_details)
